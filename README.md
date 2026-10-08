@@ -1,3 +1,12 @@
+## PR #60 parameter refinement: conditional κ = 4.76451333766568e-5
+
+The [exact certificate and 11 concrete Lean proofs](research/matrix-exponent-synthesis/README.md)
+give a strict `6.6568e-15` improvement over PR #60's reported κ, reusing its
+focused construction checks and refining rational parameters. The
+[paper source](research/matrix-exponent-synthesis/matrix-exponent-synthesis.tex)
+also develops the author's matrix/parity tools and certified matching search.
+Inherited analytic and fixed-tape hypotheses remain explicit.
+
 # A sharper exponent for integer multiplication
 
 **Community research maintained by Douglas Colkitt — conditional on the original
@@ -27,6 +36,25 @@ AI-assistance disclosures remain credited in the source notices.
 [Exact certificate](research/climbed-48/certificate.json) ·
 [Maintainer review](docs/research/community-followup-review.md) ·
 [Integration record](docs/research/community-followup-integration.md)
+
+## Additional conditional composition: dual-skip strips with joint frames
+
+The [joint-dual proof and reproduction guide](research/joint-dual/README.md)
+gives **κ=4764513337/10^14=4.764513337e-5**, approximately **0.2900108%**
+above PR58's conditional saving. It retains **Rohan Gupta's PR55 dual-skip
+graph** and **eumemic's PR57 joint frame compiler** while prioritizing retired
+slots by descending current frame rank. The dedicated variant preserves the
+original shared compiler, exact recovery and all predecessor credits.
+This is an additional conditional witness; it does not extend the scope
+of the maintainer-reviewed community result above.
+
+The physical roles are R23=30688 and R25=40338, giving W=150167598. The
+[exact certificate](certificates/joint-dual-kappa.json) checks the complete
+recursive child list and all 47 strict assembly inequalities/seven margins.
+`make joint-dual-verify` regenerates both physical words, replays every dirty
+basis vector, independently reconstructs transitions and recertifies the
+actual fixed-I+J profiles. `make verify` retains all preceding checks.
+Prepared by Chafik Boukhalfa with OpenAI Codex assistance.
 
 ## What changed
 
