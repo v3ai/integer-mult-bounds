@@ -216,3 +216,15 @@ OpenAI, David Harvey, Joris van der Hoeven and the earlier contributors
 credited in the retained sources. See references/frame-compiler/pr48/NOTICE
 and references/frame-compiler/pr53/NOTICE for their original attribution.
 No authorship or review by those predecessors is claimed for this compiler.
+
+Joint dual-skip/frame-compiler composition (2026-10-08)
+---------------------------------------------------
+Rohan Gupta / gupt1156 with Anthropic Claude assistance: PR55 dual-skip
+scalar graph; original LICENSE and NOTICE are retained under
+references/frame-compiler/pr55. eumemic with substantial OpenAI Codex
+assistance: PR57 joint reversible frame compiler, serialized physical-word
+replay and profile reconstruction. Chafik Boukhalfa with OpenAI Codex
+assistance: this composition, independent integration and exact certificate.
+Avi Eisenberg / ikeboy, Rohan Arun, RaD / hipotures, icekylinx, and all
+predecessor authors retain the notices above and in pinned source files.
+No original copyright or Apache-2.0 notice is removed.
