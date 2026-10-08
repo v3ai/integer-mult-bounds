@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def run():
     native = json.loads((ROOT/'certificates/joint-dual-kappa.json').read_text())
-    package = ROOT/'research/matrix-exponent-synthesis'
+    package = ROOT/'research/matrix-exponent-synthesis/history/pr60'
     refined = json.loads((package/'candidate/arithmetic.json').read_text())
     pinned = package/'candidate/pinned60-certificate.json'
     require(sha256(pinned.read_bytes()).hexdigest() == refined['source_certificate_sha256'], 'PR60 pin')
